@@ -27,6 +27,7 @@ function(doc) {
           cht: doc.metadata.versions && doc.metadata.versions.app,
           settings: doc.metadata.versions && doc.metadata.versions.settings,
         },
+        storage: doc.device && doc.device.deviceInfo && doc.device.deviceInfo.storage
       },
     });
   }
